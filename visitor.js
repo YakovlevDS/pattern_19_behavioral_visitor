@@ -30,3 +30,10 @@ function exportVisitor(auto) {
 	if (auto instanceof Audi)
     auto.export = console.log(`Exported data: ${auto.info()}`);
 };
+
+const tesla = new Tesla()
+const bmw = new Bmw()
+console.log(tesla.accept(exportVisitor));
+console.log(bmw.accept(exportVisitor));
+
+
